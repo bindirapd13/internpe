@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details - Galaxy Bazaar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Galaxy Bazaar</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="product-detail">
+        <h2 id="productName">Product Name</h2>
+        <div class="detail-container">
+            <img id="productImage" src="" alt="Product Image" class="detail-image">
+            <div class="detail-info">
+                <p id="productDescription">Product description will appear here.</p>
+                <p id="productPrice" class="price">Price: $0.00</p>
+            </div>
+        </div>
+        <div class="buttons">
+            <button onclick="goBack()">Go Back to Products</button>
+            <button onclick="addToCart()">Add to Cart</button>
+        </div>
+        
+        
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Galaxy Bazaar ! Empowering Your Shopping Experience, One Star at a Time !</p>
+    </footer>
+
+    <script>
+        
+        const productName = localStorage.getItem("productName");
+        const productDescription = localStorage.getItem("productDescription");
+        const productImage = localStorage.getItem("productImage");
+        const productPrice = localStorage.getItem("productPrice");
+
+        
+        document.getElementById("productName").innerText = productName;
+        document.getElementById("productDescription").innerText = productDescription;
+        document.getElementById("productImage").src = productImage;
+        document.getElementById("productPrice").innerText = `Price: ${productPrice}`;
+
+        
+        function goBack() {
+            window.location.href = "index.html";
+        }
+        function goBack() {
+    window.location.href = "index.html"; 
+} 
+
+
+function addToCart() {
+    const productName = localStorage.getItem("productName");
+    const confirmation = confirm(`Are you sure you want to add "${productName}" to your cart?`);
+    
+    if (confirmation) {
+        alert(`${productName} has been added to your cart!`);
+    }
+}
+
+    </script>
+    
+</body>
+</html>

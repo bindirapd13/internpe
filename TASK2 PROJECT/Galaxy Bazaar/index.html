@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galaxy Bazaar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Galaxy Bazaar</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero-section">
+        <h2>Welcome to Galaxy Bazaar</h2>
+        <p>Explore a universe of deals on fashion, gadgets, and more!</p>
+    </section>
+
+    <section id="products" class="product-section">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <!-- Products Start -->
+            <div class="product-card" onclick="viewDetails('Dress', 'Cosmic-themed fashionable dress', 'Galaxy Dress.webp', '&#8377;2584.68')">
+                <img src="Galaxy Dress.webp" alt="Galaxy Dress ">
+                <h3> Dress</h3>
+                <p>&#8377;2584.68</p>
+                <p>&#8595;50% off Free delivery</p>
+                <div class="star-rating">
+                    <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                </div>
+            </div>
+            <div class="product-card" onclick="viewDetails('Earbuds', 'High-quality cosmic earbuds', 'Earbuds.jpg', '&#8377;3446.53')">
+                <img src="Earbuds.jpg" alt="Starlight Earbuds">
+                <h3>Earbuds</h3>
+                <p>&#8377;3446.53</p>
+                <p>&#8595;35% off </p>
+                <div class="star-rating">
+                    <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                </div>
+            </div>
+            <div class="product-card" onclick="viewDetails('Black Hoodie', 'Warm and stylish hoodie', 'hoodies.webp', '&#8377;1809.02')">
+                <img src="hoodies.webp" alt="Nebula Hoodie">
+                <h3>Black Hoodie</h3>
+                <p>&#8377;1809.02</p>
+                <p>&#8595;50% off Free delivery</p>
+                <div class="star-rating">
+                    <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                </div>
+            </div>
+            
+            <div class="product-card" onclick="viewDetails('Glass Bowl Set', 'Premium kitchen vessel set', 'bowl.webp', '&#8377;3015.61')">
+                <img src="bowl.webp" alt="Galaxy Bowl Set">
+                <h3>Glass Bowl Set</h3>
+                <p>&#8377;3015.61</p>
+                <p>&#8595;27% off Free delivery</p>
+                <div class="star-rating">
+                    <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                </div>
+            </div>
+            <div class="product-card" onclick="viewDetails('Sneakers', 'Stylish space sneakers', 'sneakers.avif', '&#8377;5170.23')">
+                <img src="sneakers.avif" alt="Cosmic Sneakers">
+                <h3>Sneakers</h3>
+                <p>&#8377;5170.23</p>
+                <p>&#8595;15% off Free delivery</p>
+                <div class="star-rating">
+                    <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                </div>
+            </div>
+            <div class="product-card" onclick="viewDetails('Mug', 'Unique astronaut-themed mug', 'mug.jpg', '&#8377;1119.54')">
+                <img src="mug.jpg" alt="Astronaut Mug">
+                <h3>Mug</h3>
+                <p>&#8377;1119.54</p>
+                <p>&#8595;50% off Free delivery</p>
+                <div class="star-rating">
+                    <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                </div>
+            </div>
+            <div class="product-card" onclick="viewDetails('T-Shirt', 'Cosmic graphic T-shirt', 'tshirt.jpg', '&#8377;947.17')">
+                <img src="tshirt.jpg" alt="Galaxy T-Shirt">
+                <h3>T-Shirt</h3>
+                <p>&#8377;947.17</p>
+                <p>&#8595;25% off Free delivery</p>
+                <div class="star-rating">
+                    <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                </div>
+            </div>
+            <div class="product-card" onclick="viewDetails(' Lamp', 'Space-themed table lamp', 'lamp.webp', '&#8377;3360.35')">
+                <img src="lamp.webp" alt="Stellar Lamp">
+                <h3>Lamp</h3>
+                <p>&#8377;3360.35</p>
+                <p>&#8595;50% off </p>
+                <div class="star-rating">
+                    <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                </div>
+            </div>
+            <div class="product-card" onclick="viewDetails('Backpack', 'Trendy galaxy backpack', 'backpack.jpg', '&#8377;3877.46')">
+                <img src="backpack.jpg" alt="Cosmic Backpack">
+                <h3>Backpack</h3>
+                <p>&#8377;3877.46</p>
+                <p>&#8595;25% off Free delivery</p>
+                <div class="star-rating">
+                    <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                </div>
+            </div>
+            <div class="product-card" onclick="viewDetails('RadhaKrishna Keychain', 'Stylish space keychain', 'keychain.webp', '&#8377;316.25')">
+                <img src="keychain.webp" alt="Nebula Keychain">
+                <h3>RadhaKrishna Keychain</h3>
+                <p>&#8377;316.25</p>
+                <p>&#8595;36% off Free delivery</p>
+                <div class="star-rating">
+                    <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                </div>
+            </div>
+            <div class="product-card" onclick="viewDetails('Phone Case', 'Protective and stylish case', 'phonecase.webp', '&#8377;570')">
+                <img src="phonecase.webp" alt="Galaxy Phone Case">
+                <h3>Phone Case</h3>
+                <p>&#8377;570</p>
+                <p>&#8595;20% off Free delivery</p>
+                <div class="star-rating">
+                    <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                </div>
+            </div>
+            <div class="product-card" onclick="viewDetails(' Wall Art', 'Beautiful cosmic wall art', 'wallart.webp', '&#8377;6370')">
+                <img src="wallart.webp" alt="Starry Wall Art">
+                <h3>Wall Art</h3>
+                <p>&#8377;6370</p>
+                <p>&#8595;75% off </p>
+                <div class="star-rating">
+                    <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                </div>
+            </div>
+            <div class="product-card" onclick="viewDetails('Coasters', 'Galaxy-designed coasters', 'coasters.webp', '&#8377;860.99')">
+                <img src="coasters.webp" alt="Space Coasters">
+                <h3>Coasters</h3>
+                <p>&#8377;860.99</p>
+                <p>&#8595;50% off Free delivery</p>
+                <div class="star-rating">
+                    <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                </div>
+            </div>
+            <div class="product-card" onclick="viewDetails('Painting', 'Handcrafted space painting', 'painting.webp', '&#8377;4300.62')">
+                <img src="painting.webp" alt="Milky Way Painting">
+                <h3>Painting</h3>
+                <p>&#8377;4300.62</p>
+                <p>&#8595;37% off Free delivery</p>
+                <div class="star-rating">
+                    <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                </div>
+            </div>
+            <div class="product-card" onclick="viewDetails('Blanket', 'Cozy galaxy-themed blanket', 'blanket.jpg', '&#8377;5170')">
+                <img src="blanket.jpg" alt="Starry Blanket">
+                <h3>Blanket</h3>
+                <p>&#8377;5170</p>
+                <p>&#8595;42% off Free delivery</p>
+                <div class="star-rating">
+                    <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                </div>
+            </div>
+            <div class="product-card" onclick="viewDetails('Watch', 'Smartwatch with a space look', 'watch.webp', '&#8377;11203.17')">
+                <img src="watch.webp" alt="Astro Watch">
+                <h3>Watch</h3>
+                <p>&#8377;11203.17</p>
+                <p>&#8595;69% off</p>
+                <div class="star-rating">
+                    <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                </div>
+            </div>
+            <div class="product-card" onclick="viewDetails('Notebook', 'Galaxy-inspired notebook', 'notebook.webp', '&#8377;350')">
+                <img src="notebook.webp" alt="Planet Notebook">
+                <h3>Notebook</h3>
+                <p>&#8377;350</p>
+                <p>&#8595;75% off Free delivery</p>
+                <div class="star-rating">
+                    <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                </div>
+            </div>
+            <div class="product-card" onclick="viewDetails('Chair', 'Ergonomic space chair', 'chair.jpg', '&#8377;6808.60')">
+                <img src="chair.jpg" alt="Galaxy Chair">
+                <h3>Chair</h3>
+                <p>&#8377;6808.60</p>
+                <p>&#8595;5% off </p>
+                <div class="star-rating">
+                    <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                </div>
+            </div>
+            <div class="product-card" onclick="viewDetails('Pendant', 'Stylish space pendant', 'pendant.webp', '&#8377;4308.38')">
+                <img src="pendant.webp" alt="Meteorite Pendant">
+                <h3>Pendant</h3>
+                <p>&#8377;4308.38</p>
+                <p>&#8595;25% off Free delivery</p>
+                <div class="star-rating">
+                    <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <h2>Contact Us</h2>
+        <p>Phone: +919876543211</p>
+        <p>Email: shopping@galaxybazaar.com</p>
+        <p>Address: 123 Cosmic Street, Galaxy City</p>
+    </section>
+
+    <footer>
+        <p> 2025 Galaxy Bazaar ! Empowering Your Shopping Experience, One Star at a Time ! </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
